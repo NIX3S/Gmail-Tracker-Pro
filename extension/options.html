@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Options — Gmail Tracker Pro</title>
+    <style>
+        body { font-family: -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 460px; margin: 40px auto; }
+        label { display: block; margin: 16px 0 4px; font-size: 13px; color: #44515a; }
+        input { width: 100%; padding: 8px 10px; border: 1px solid #d7dad5; border-radius: 6px; box-sizing: border-box; }
+        button { margin-top: 20px; padding: 9px 16px; border: none; border-radius: 6px; background: #132a3a; color: #fff; cursor: pointer; }
+        .saved { color: #2f6b45; font-size: 13px; margin-top: 10px; display: none; }
+        .test-result { font-size: 13px; margin-top: 10px; padding: 8px 10px; border-radius: 6px; display: none; }
+        .test-ok { background: #e7f0e9; color: #2f6b45; }
+        .test-fail { background: #fbe9e7; color: #a13d2b; }
+        code { background: #f2f4f1; padding: 1px 5px; border-radius: 4px; }
+        .hint { font-size: 12px; color: #8a949a; margin-top: 4px; }
+    </style>
+</head>
+<body>
+    <h2>⚙️ Configuration</h2>
+
+    <label for="apiBaseUrl">URL de ton backend</label>
+    <input id="apiBaseUrl" type="text" placeholder="https://statistics.ct.ws" autocomplete="off">
+    <p class="hint">Doit correspondre exactement à <code>APP_BASE_URL</code> dans <code>config.php</code> sur ton serveur (sans slash final).</p>
+
+    <label for="token">Token API</label>
+    <input id="token" type="password" autocomplete="off">
+    <p class="hint">Généré par <code>create_user.php</code> sur ton serveur. Stocké localement dans ton navigateur, jamais partagé ailleurs.</p>
+
+    <button id="save">Enregistrer</button>
+    <button id="test" type="button">Tester la connexion</button>
+    <div class="saved" id="saved">Enregistré ✓</div>
+    <div class="test-result" id="testResult"></div>
+    <script src="options.js"></script>
+</body>
+</html>

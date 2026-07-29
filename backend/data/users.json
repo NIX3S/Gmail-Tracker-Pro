@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "username": "extension",
+        "password_hash": "$2y$12$HV/SxbwlTdiUsJKoHdG2Ne7dL2mJNBtTOIcsA7LdnFSm0ORhWSIeS",
+        "api_token_hash": "$2y$12$AnYcjhuaB1M.D8whZMmdgeNTP40HnuHEGgGrXg/GrFZOX.MP3ofii",
+        "created_at": "2026-07-24 11:19:51"
+    },
+    {
+        "id": 2,
+        "username": "extension",
+        "password_hash": "$2y$12$2JttVUYwKZcmhpKxgVLdWO6rTOrXrOkkeG0N0ap60K0zAdxI6.yaO",
+        "api_token_hash": "$2y$12$H4UR7hL5gY04o2YlwzNVJurIAe0Bo7OwWfEik2QCBnvi1TdE1OHI.",
+        "created_at": "2026-07-27 08:11:04"
+    }
+]
